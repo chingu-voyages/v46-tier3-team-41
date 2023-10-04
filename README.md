@@ -35,11 +35,10 @@ Meeting Agenda templates (located in the `/docs` directory in this repo):
 5. Open a terminal in the root
 6. Run `pipenv install`
 7. Run `pipenv shell`
-8. Set the following values in the `.env` file:
-9. Run `python manage.py makemigrations`
-10. Run `python manage.py migrate`
-11. Run `python manage.py runserver`
-
+8. Run `python manage.py makemigrations`
+9. Run `python manage.py migrate`
+10. Run `python manage.py runserver`
+11. Set the following values in the `.env` file:
 ```
 SECRET_KEY= 'THE_ACTUAL_KEY'
 DATABASE_NAME = 
