@@ -26,3 +26,22 @@ Meeting Agenda templates (located in the `/docs` directory in this repo):
 - Meeting - App Vision & Feature Planning --> ./docs/meeting-vision_and_feature_planning.docx
 - Meeting - Sprint Retrospective, Review, and Planning --> ./docs/meeting-sprint_retrospective_review_and_planning.docx
 - Meeting - Sprint Open Topic Session --> ./docs/meeting-sprint_open_topic_session.docx
+
+## Getting Started
+1. Install pipenv
+2. Install postgres
+3. Create a `.env` file in the root 
+4. Create a new database in postgres (I recommend using pgAdmin if you installed it too)
+5. Open a terminal in the root
+6. Run `pipenv install`
+7. Run `pipenv shell`
+8. Run `python manage.py makemigrations`
+9. Run `python manage.py migrate`
+10. Run `python manage.py runserver`
+11. Set the following values in the `.env` file:
+```
+SECRET_KEY= 'THE_ACTUAL_KEY'
+DATABASE_NAME = 
+DATABASE_USER = 
+DATABASE_PASSWORD = 
+```
